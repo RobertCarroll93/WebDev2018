@@ -2,14 +2,14 @@ extends layout
 
 block content
         .row
+        p welcome to indiv
           img.contact-banner(alt='Oakfield Health', src='our-team-banner.jpg')
           .staff-row
             .grid-container
-              each staffmember in staff
+              each staffmember in specpage
                 h1 #{staffmember.name} 
                 img.staffimage(src='person2.jpg', alt='some image')
                 p.staffp ID: #{staffmember.id}
                 p.staffp Field of speciality: #{staffmember.speciality}
                 p.staffp Years practised: #{staffmember.yearspractised}
-                a.button(href="/moreinfo/#{staffmember.name}") Show;
-                  
+                

@@ -1,0 +1,44 @@
+[
+ {
+ "name": "Kevin Finnerty GP",
+ "id": 1,
+ "speciality": "Family planning",
+ "yearspractised" : 15,
+ "image": "person2.jpg"
+ },
+ {
+ "name": "Laura McGrath GP",
+ "id": 1,
+ "speciality": "Pediatrics",
+ "yearspractised" : 7,
+ "image": "person2.jpg"
+ },
+ {
+ "name": "John Mitchell GP",
+ "id": 1,
+ "speciality": "Cardiology",
+ "yearspractised" : 38,
+ "image": "person2.jpg"
+ },
+ {
+ "name": "Angela Murtagh GP",
+ "id": 1,
+ "speciality": "Geriatrics",
+ "yearspractised" : 31,
+ "image": "person2.jpg"
+ },
+ {
+ "name": "Gavrilo Princip GP",
+ "id": 1,
+ "speciality": "Infectious diseases",
+ "yearspractised" : 14,
+ "image": "person2.jpg"
+ },
+ {
+ "name": "William Wells GP",
+ "id": 1,
+ "speciality": "Oncology",
+ "yearspractised" : 11,
+ "image": "person2.jpg"
+ }
+]

@@ -409,3 +409,12 @@ template taken from above source and altered for this app (next six blocks) */
     cursor: pointer;
 }
 
+
+.staffp{
+    color: black;
+    
+}
+
+.staffimage{
+    width:15%;
+}
