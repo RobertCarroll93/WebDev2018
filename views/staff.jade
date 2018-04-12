@@ -1,0 +1,295 @@
+doctype html
+html
+  head
+    script.
+      // When the div is clicked on a popup will appear
+      function moreInfo() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+      }
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='app.css', type='text/css')
+    title Oakfield Health
+  body
+    .header
+      .nav
+        .topnav
+          .logo-div
+            img.logo(alt='Oakfield Health', src='logo.png')
+          .contact-info(onclick='moreInfo()')
+            | Phone: 046905467388 &nbsp&nbsp&nbsp Email: oakfield@health.ie
+            span#myPopup.popuptext Click on Contact Us for more info
+          a(href='/index') Home
+          a(href='/staff') Staff
+          a(href='/academic') Academic Section
+          a.contact-anchor(href='/contact') Contact Us
+        //
+          https://www.w3schools.com/howto/howto_css_team.asp
+          Basic html of the "meet our team" used code from the above link
+        .row
+          img.contact-banner(alt='Oakfield Health', src='our-team-banner.jpg')
+          .column
+            .card
+              img(src='person2.jpg', alt='Dr. Kevin Finnerty', style='width:100%')
+              .container
+                h2 Dr. Kevin Finnerty
+                p.title General Practioner
+                p
+                  button#btn1 More Information
+                  #myModal.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        | Dr Kevin Finnerty BM BS BSc PhD 
+                        br
+                        br
+                        b Email:
+                        |  kevinfinnerty@health.ie
+                        br
+                        br
+                        b Special Interests:
+                        br
+                        | Acute Medical Care
+                        br
+                        | Paediatrics
+                        br
+                        | Sexual Health & Infectious Diseases
+                        br
+                        | Sports Medicine
+          .column2
+            .card
+              img(src='person2.jpg', alt='Dr. Mary McKeown', style='width:100%')
+              .container
+                h2 Dr. Mary McKeown
+                p.title General Practioner
+                p
+                  button#btn2 More Information
+                  #myModal2.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p Dr. Mary McKeown MB BCH MRCP, MICGP, DRCOG, DCH
+                      br
+                      b Email:
+                      |  marymckeown@health.ie
+                      br
+                      br
+                      | Qualified from the Royal College of Surgeons in Ireland (RCSI).
+                      br
+                      | Has worked as a GP for the past 30 years in County Meath.
+                      br
+                      | GP Trainer for the Midland GP training scheme since 2008
+                      br
+                      br
+                      b Special Interests:
+                      br
+                      | Development of General Practice Services
+                      br
+                      | Holistic Patient Care
+                      br
+                      | Family Health Needs
+                      br
+                      | Occupational Health
+                      br
+          .column3
+            .card
+              img(src='person2.jpg', alt='', style='width:100%')
+              .container
+                h2 Dr. Morak Limerar
+                p.title General Practioner
+                p
+                  button#btn3 More Information
+                  #myModal3.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        | Dr. Morak Limerar MB BCH MRCP 
+                        br
+                        br
+                        b Email:
+                        |  moraklimerar@health.ie
+                        br
+                        br
+                        | Has worked as a GP for for Oakfield Health for 15 years.
+                        br
+                        br
+                        b
+                          u Special Interests:
+                        br
+                        | Holistic Patient Care
+                        br
+                        | Family Health Needs
+                        br
+                        | Occupational Health
+        .row2
+          .column
+            .card
+              img(src='person2.jpg', alt='Mike', style='width:100%')
+              .container
+                h2 Dr. Emily O'Rourke
+                p.title General Practioner
+                p
+                  button#btn4 More Information
+                  #myModal4.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        | Dr Emily O'Rourke MB BCH BAO MICGP DOWH
+                        br
+                        b Email:
+                        |  emilyorourke@health.ie
+                        br
+                        br
+                        | Qualified from University College Dublin (UCD).
+                        br
+                        br
+                        b
+                          u Special Interests:
+                        br
+                        | Development of General Practice Services
+                        br
+                        | Women's Health
+                        br
+                        | Family Planning
+                        br
+                        | Occupational Health
+          .column2
+            .card
+              img(src='person2.jpg', alt='Mike', style='width:100%')
+              .container
+                h2 Michelle Campbell
+                p.title Nurse
+                p
+                  button#btn5 More Information
+                  #myModal5.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        | Nurse Michelle Campbell RGN, Bsc (Hons) Nursing, H Dip (Practice Nursing)
+                        br
+                        br
+                        b Email:
+                        |  michellecampbell@health.ie
+                        br
+                        br
+                        b
+                          u Special Interests:
+                        br
+                        | Diabetes
+                        br
+                        | Asthma
+                        br
+                        | Women's Health
+                        br
+                        | Cardiovascular Health
+                        br
+                        | Weight Management
+          .column3
+            .card
+              img(src='person2.jpg', alt='John', style='width:100%')
+              .container
+                h2 Susan Martin
+                p.title Practice Secretary
+                p
+                  button#btn6 More Information
+                  #myModal6.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        b Email:
+                        |  susanmartin@health.ie
+                        br
+                        br
+                        | 	Has worked at Oakfield Health for twenty years
+        button.slider-button See more
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+      script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+      script.
+        $(document).ready(function(){
+        $(".slider-button").click(function(){
+        $(".row2").slideToggle(500);
+        //Button changes between "See More" and "See Less" when the slide toggle button is clicked
+        //https://stackoverflow.com/questions/19365386/jquery-change-button-text-on-click
+        var $this = $(this);
+        $this.toggleClass('.row2');
+        if($this.hasClass('.row2')){
+        $this.text('See Less');
+        } else {
+        $this.text('See More');
+        }
+        });
+        });
+      script.
+        //https://www.w3schools.com/howto/howto_css_modals.asp
+        // Get the modal
+        var modal = document.getElementById('myModal');
+        var modal2 = document.getElementById('myModal2');
+        var modal3 = document.getElementById('myModal3');
+        var modal4 = document.getElementById('myModal4');
+        var modal5 = document.getElementById('myModal5');
+        var modal6 = document.getElementById('myModal6');
+        // Get the button that opens the modal
+        var btn = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+        var btn5 = document.getElementById("btn5");
+        var btn6 = document.getElementById("btn6");
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        var span2 = document.getElementsByClassName("close")[1];
+        var span3 = document.getElementsByClassName("close")[2];
+        var span4 = document.getElementsByClassName("close")[3];
+        var span5 = document.getElementsByClassName("close")[4];
+        var span6 = document.getElementsByClassName("close")[5];
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+        modal.style.display = "block";
+        }
+        btn2.onclick = function() {
+        modal2.style.display = "block";
+        }
+        btn3.onclick = function() {
+        modal3.style.display = "block";
+        }
+        btn4.onclick = function() {
+        modal4.style.display = "block";
+        }
+        btn5.onclick = function() {
+        modal5.style.display = "block";
+        }
+        btn6.onclick = function() {
+        modal6.style.display = "block";
+        }
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+        modal.style.display = "none";
+        }
+        span2.onclick = function() {
+        modal2.style.display = "none";
+        }
+        span3.onclick = function() {
+        modal3.style.display = "none";
+        }
+        span4.onclick = function() {
+        modal4.style.display = "none";
+        }
+        span5.onclick = function() {
+        modal5.style.display = "none";
+        }
+        span6.onclick = function() {
+        modal6.style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+        modal.style.display = "none";
+        }
+        }
+      .footer
+        p Robert Carroll 2018 &copy

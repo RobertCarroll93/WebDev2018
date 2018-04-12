@@ -1,0 +1,411 @@
+body {
+     background-color: #F0F0F0;
+     text-align: center;
+     min-height:750px;
+	  margin:0 auto;
+    width:80%;
+	/* margin-bottom:10%; */
+}
+ .logo {
+     width: 60%;
+}
+ .logo-div{
+     text-align: center;
+     width: 20%;
+     margin-left: auto;
+     margin-right: auto;
+     float: left;
+}
+ .nav{
+     text-align: center;
+	 background-color:white;
+     /* width: 80%;
+     margin-left: 10%;
+     margin-right: auto;
+     float: left;*/
+     margin-bottom: 4.5%; 
+}
+ .header {
+     text-align: center;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+}
+/* Styling for the top navigation div */
+ .topnav {
+     background-color: white;
+     overflow: auto;
+}
+/* Styling for navigation links */
+ .topnav a {
+     float: left;
+     color: black;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     margin-top: 6.7%;
+     margin-left:4%;
+
+	
+}
+
+/* Changes colour of a link when cursor is over it */
+ .topnav a:hover {
+     background-color: lightgrey;
+     color: black;
+}
+ .contact-info{
+     float:right;
+     margin-right:1.5%;
+	 border-radius:  0px 0px 15px 15px ;
+	 background-color: lightblue;
+	 padding: 7px 8px;
+	 
+}
+/* Colours the link that currently on screen */
+ .topnav a.active {
+     background-color: #4CAF50;
+     color: white;
+}
+ .row {
+	 background-color: white;
+     display: -webkit-flex;
+     display: inline-block;
+     width: 100%;
+}
+
+.row2 {
+	background-color: white;
+	display: none;
+	margin-bottom:20%;
+}
+/* Styling for the footer */
+ .footer {
+     background-color: white;
+     text-align: center;
+     width:100%;
+     position: fixed;
+     bottom: 0px;
+    margin-left:-10%;
+	 margin-top:20%;
+	 
+	 
+}
+ .footer p{
+     color: black;
+
+}
+
+ .mainpic{
+	 width: 100%;
+	 height: auto;
+ }
+ .mainpicdiv .button1{
+	   position: absolute;
+  top: 40%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+ }
+ .mainpicdiv .button2{
+	   position: absolute;
+  top: 55%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 37px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+ }
+  .mainpicdiv .button3{
+	   position: absolute;
+  top: 84%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: grey;
+  color: white;
+  font-size: 16px;
+  padding: 12px 37px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+ }
+	
+ .map{
+	 float:right;
+ }
+ 
+ .contact-left{
+	 float:left;
+	 width:50%;
+	 height:auto;
+	 margin-bottom:10%;
+	 margin-right: 5%;
+	 margin-left: 5%
+	 
+ }
+ .contact-left h2{
+	 float:left;
+	 
+ }
+ 
+ .contact-right{
+	 width:30%;
+	float:right;
+	margin-top: 8%;
+	margin-right: 5%;
+	border: 1px solid black;
+	padding:2%;
+	background-color:#F0F0F0;
+	
+	
+ }
+ /*Next three blocks come from https://www.w3schools.com/howto/howto_css_contact_form.asp
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	float:left;
+    width: 55%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	clear: both;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	float:left;
+    background-color: lightblue;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	clear:both;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #718BFF;
+}
+.option{
+	width: 58.5%;
+}
+.contact-banner{
+	width:100%;
+	height:auto;
+}
+
+
+
+
+/* https://www.w3schools.com/howto/howto_css_team.asp
+following code (eight block) is based on code from the above source */
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 25%;
+	margin-right:1%;
+    margin-bottom: 16px;
+    padding: 0 0px;
+	margin-top: 2%;
+	background-color: white;
+	margin-left:5%;
+}
+
+.column2 {
+    float: left;
+    width: 25%;
+	margin-right:5%;
+	margin-left: 5%;
+    margin-bottom: 16px;
+    padding: 0 0px;
+	margin-top: 2%;
+	background-color: white;
+}
+
+.column3 {
+    float: left;
+    width: 25%;
+	margin-right:5%;
+	margin-left: 1%;
+    margin-bottom: 16px;
+    padding: 0 0px;
+	margin-top: 2%;
+	background-color: white;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+#btn1, #btn2, #btn3, #btn4, #btn5, #btn6  {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+/* https://www.w3schools.com/howto/howto_js_popup.asp 
+template taken from above source and altered for this app (next six blocks) */
+
+.contact-info {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The popup */
+.contact-info .popuptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -130%;
+    left: 36%;
+    margin-left: 10px;
+	 font-size: 12px;
+}
+
+/* Popup arrow */
+.contact-info .popuptext::after {
+	transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: -14%;
+    left: 13%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggles the popup being shown */
+.contact-info .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Adds fade to the popup */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.slider{
+	height: 50%;
+}
+
+
+
+
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

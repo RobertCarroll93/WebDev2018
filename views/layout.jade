@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    script.
+      // When the div is clicked on a popup will appear
+      function moreInfo() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+      }
+    meta(charset='UTF-8')
+    link(rel='stylesheet', href='app.css', type='text/css')
+    title Oakfield Health
+  body
+    .header
+      .nav
+        .topnav
+          .logo-div
+            img.logo(alt='Oakfield Health', src='logo.png')
+          .contact-info(onclick='moreInfo()')
+            | Phone: 046905467388 &nbsp&nbsp&nbsp Email: oakfield@health.ie
+            span#myPopup.popuptext Click on Contact Us for more info
+          a(href='/index') Home
+          a(href='/staff') Staff
+          a(href='/academic') Academic Section
+          a(href='/contact') Contact Us
+          block content
+    .footer
+      p Robert Carroll 2018 &copy

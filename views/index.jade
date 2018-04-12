@@ -1,0 +1,8 @@
+extends layout
+
+block content
+        .mainpicdiv
+          a.button1(href='/appointment') Book an Appointment
+          a.button2(href='/contact') Find Our Location
+          a.button3(href='/manageappointments', onclick="document.getElementById('id01').style.display='block'", style='width:auto;') Manage Appointments (Staff Login)
+          img.mainpic(src='mainpic.jpg', alt='Oakfield Health')

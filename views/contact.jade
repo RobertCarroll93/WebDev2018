@@ -1,0 +1,40 @@
+extends layout
+
+block content
+        img.contact-banner(alt='Oakfield Health', src='contactbanner.jpg')
+        .contact-left
+          h2 Message Us
+          form
+            input#name(type='text', name='name', placeholder='Your name..')
+            input#email(type='text', name='email', placeholder='Your email address..')
+            select.option(name='option')
+              option(value='', disabled='', selected='', hidden='') Select your option
+              option(value='general-inquiry') General Inquiry
+              option(value='appointment') Appointment
+              option(value='prescription') Prescription
+              option(value='other') Other
+            textarea#subject(name='subject', placeholder='Write something..', style='height:200px')
+            input(type='submit', value='Submit')
+        .contact-right
+          iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.4685024016426!2d-6.692994071729008!3d53.65272769306566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48675b4c994fedf1%3A0xee73b476c909676e!2s12+Market+Square%2C+Dillonsland%2C+Navan%2C+Co.+Meath!5e0!3m2!1sen!2sie!4v1521740623247', width='100%', height='auto', frameborder='0', style='border:0', allowfullscreen='')
+          br
+          br
+          br
+          br
+          br
+          br
+          br
+          br
+          p
+            b Phone:
+            |  &nbsp 046905467388
+          p
+            b Email:
+            |  &nbsp oakfield@health.ie
+          p
+            b Address:
+            |  &nbsp Market Square,&nbsp Navan,&nbsp Co Meath
+          p
+            b Opening Hours:
+            |  9am to 6pm Weekdays  (Excluding Bank Holidays)
+    
