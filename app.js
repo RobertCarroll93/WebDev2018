@@ -55,7 +55,12 @@ app.get('/moreinfo/:name', function(req, res){
       console.log("Specific page has rendered");
 })
 
+//Function for calling add staff page
 
+app.get("/add", function(req, res){
+  res.render("add");
+  console.log("Add page rendered");
+});
 
 
 

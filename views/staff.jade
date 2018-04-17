@@ -2,14 +2,16 @@ extends layout
 
 block content
         .row
-          img.contact-banner(alt='Oakfield Health', src='our-team-banner.jpg')
+          img.contact-banner(alt='Oakfield Health', src='../our-team-banner.jpg')
           .staff-row
-            .grid-container
-              each staffmember in staff
-                h1 #{staffmember.name} 
-                img.staffimage(src='person2.jpg', alt='some image')
-                p.staffp ID: #{staffmember.id}
-                p.staffp Field of speciality: #{staffmember.speciality}
-                p.staffp Years practised: #{staffmember.yearspractised}
-                a.button(href="/moreinfo/#{staffmember.name}") Show;
-                  
+            each staffmember in staff
+              
+              
+              h1 #{staffmember.name} 
+              img.staffimage(src='../#{staffmember.image}', alt='Oakfield Health')
+              br
+              a.button-add(href="/moreinfo/#{staffmember.name}") More Information
+              br
+              br
+              br
+              br
