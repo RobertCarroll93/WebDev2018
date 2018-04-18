@@ -440,3 +440,53 @@ a.button-add{
     display: inline-block;
     font-size: 16px;
 }
+
+/* style for add page */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  
+  
+}
+
+.formhold {
+  border-radius: 5px;
+  background-color: white;
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+.title {
+   display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 25px
+    
+}
+
+
+
+
+
+
+.buttonforadd {
+   text-align: center;
+    margin-top: 1%;
+    background-color: lightblue; 
+    display: inline-block;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

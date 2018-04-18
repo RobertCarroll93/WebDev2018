@@ -62,6 +62,39 @@ app.get("/add", function(req, res){
   console.log("Add page rendered");
 });
 
+//Finds out how many members of staff there are
+app.post("/add", function(req,res){
+  var count = Object.keys(staff).length;
+  console.log(count);
+
+  //Finds the current higheset ID
+  function getMax(staff, id){
+    var max
+    for(i=0; i < staff.length; i++){
+      if(!max || parseInt(staff[i][id]) > parseInt(max[id]))
+        max = staff[i];
+  }  
+  return max;
+}
+  var maxStaff = getMax(staff, "id");
+ var newId = maxStaff + 1;
+  console.log(newId);
+  
+  
+  var staffmember = {
+    name: req.body.name,
+    id: newId, 
+    speciality: req.body.speciality,
+    university: req.body.university,
+    yearspractised: req.body.yearspractised,
+    image: req.body.image
+    
+  };
+  
+  
+});
+
+
 
 
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){

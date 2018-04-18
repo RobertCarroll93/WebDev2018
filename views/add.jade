@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  .row
+  h1 Add new member of staff below <br><br>
+     .formhold
+             form(method="post")
+               fieldset
+                 br
+                 label(for="name") Staffmember name: <br>
+                 input(name="name", type="text", placeholder="Enter name here...")
+                 br
+                 br
+                 br
+                 label(for="university") Graduated from:<br>
+                 input(name="university", type="text", placeholder="Enter University here...")
+                 br
+                 br
+                 br
+                 label(for="yearspractised") Years of practise:<br>
+                 input(name="yearspractised", type="text", placeholder="Enter number of years practised here...")
+                 br
+                 br
+                 br
+                 label(for="image") Image of GP:<br>
+                 input(name="image", type="text", placeholder="Enter an image here...")
+                 button.buttonforadd(type="submit") Create New
