@@ -5,7 +5,13 @@ app.use(express.static("views")); // Allow access to views folder
 app.use(express.static("scripts")); // Allow access to scripts folder
 app.use(express.static("images")); // Allow access to images folder
 
+var http = require('http');
+var bodyParser = require("body-parser");
+var fs = require('fs');
+
 app.set("view engine", "jade");
+
+app.use(bodyParser.urlencoded({extended:true}));
 
 var staff = require("./model/staff.json");
 
@@ -46,14 +52,14 @@ app.get('/moreinfo/:name', function(req, res){
   }
   
   console.log(staff.filter(findStaff)); //Shows in console the staff member that has bee selected
-  specpage = staff.filter(findStaff); //This function filters the staff members based on the parameters from findStaff
-      console.log(specpage)
+   var specpage = staff.filter(findStaff); //This function filters the staff members based on the parameters from findStaff
+      console.log(specpage);
       res.render("moreinfo",
         {specpage:specpage}
       );
       
       console.log("Specific page has rendered");
-})
+});
 
 //Function for calling add staff page
 
@@ -69,15 +75,15 @@ app.post("/add", function(req,res){
 
   //Finds the current higheset ID
   function getMax(staff, id){
-    var max
-    for(i=0; i < staff.length; i++){
+    var max;
+    for(var i=0; i < staff.length; i++){
       if(!max || parseInt(staff[i][id]) > parseInt(max[id]))
         max = staff[i];
   }  
   return max;
 }
   var maxStaff = getMax(staff, "id");
- var newId = maxStaff + 1;
+  var newId = maxStaff.id + 1;
   console.log(newId);
   
   
@@ -91,7 +97,71 @@ app.post("/add", function(req,res){
     
   };
   
+  var json =JSON.stringify(staff); //or staffmember
   
+    fs.readFile("./model/staff.json", "utf8", function readFileCallback(err, data){
+      if(err){
+        console.log("There is a problem");
+      }
+      else{
+        staff.push(staffmember); //or staffmember
+        json = JSON.stringify(staff, null, 4); // converts back to JSON and indents JSON file
+        fs.writeFile("./model/staff.json", json, "utf8"); //writes to file
+      }
+    });
+  res.redirect("/staff");
+});
+
+//For editing a member of staff
+
+app.get("/edit/:name", function(req, res) {
+   console.log("The edit page has been rendered");
+   
+   function chooseStaffmember(spec){
+     return spec.name === req.params.name;
+   }
+   
+   var spec = staff.filter(chooseStaffmember);
+   
+   res.render("edit", {  
+              spec:spec}
+              );
+    console.log(spec);
+}); 
+
+
+
+app.post("/edit/:name", function(req, res){
+  var json = JSON.stringify(staff);
+  
+  fs.readFile("./model/staff.json", "utf8", function readFileCallback(err, data){
+    if(err){
+      console.log("Something went wrong");
+    }
+    else{
+      var key = req.params.name; //This calls the name from URL
+      
+      var stringstaff = staff;
+      
+      var data = stringstaff;
+      
+      var indexstaff = data.map(function(staffmember){
+        return staffmember.name;
+      }).indexOf(key);
+      
+     
+      
+      staff.splice(indexstaff, 1, {name: req.body.newname, speciality: req.body.newspeciality, 
+      university: req.body.newuniversity, yearspractised: req.body.newyearspractised, image: req.body.newimage});
+     
+     json = JSON.stringify(staff, null, 4);
+     
+     fs.writeFile("./model/staff.json", json, "utf8");
+     
+      
+    }
+  });
+  res.redirect("/staff");
 });
 
 

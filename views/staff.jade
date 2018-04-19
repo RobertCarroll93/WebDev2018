@@ -3,9 +3,7 @@ extends layout
 block content
         .row
           img.contact-banner(alt='Oakfield Health', src='../our-team-banner.jpg')
-          a.button-add(href="../add") Add
-          br
-          br
+          a.button-add3(href="../add") Add New Staffmember
           br
           br
           br
@@ -15,6 +13,9 @@ block content
               img.staffimage(src='../#{staffmember.image}', alt='Oakfield Health')
               br
               a.button-add(href="/moreinfo/#{staffmember.name}") More Information
+              a.button-add2(href="/edit/#{staffmember.name}") Edit
+              br
+              br
               br
               br
               br

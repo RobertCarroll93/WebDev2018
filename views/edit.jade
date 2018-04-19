@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    .row
+    h1 Welcome to the edit page <br> <br>
+        .formhold
+                each staffmember in spec
+                    form(method="post")
+                        fieldset
+                            label(for="newname") Staffmember name:
+                            input(name="newname", type="text", value="#{staffmember.name}")
+                            br
+                            br
+                            br
+                            label(for="newspeciality") Speciality:
+                            input(name="newspeciality", type="text", value="#{staffmember.speciality}")
+                            br
+                            br
+                            br
+                            label(for="newuniversity") University:
+                            input(name="newuniversity", type="text", value="#{staffmember.university}")
+                            br
+                            br
+                            br
+                            label(for="newyearspractised") Years Practised:
+                            input(name="newyearspractised", type="text", value="#{staffmember.yearspractised}")
+                            br
+                            br
+                            br
+                            label(for="newimage") Image:
+                            input(name="newimage", type="text", value="#{staffmember.image}")
+                            br
+                            br
+                            br
+                            button.buttonforadd(type="submit") Update #{staffmember.name}

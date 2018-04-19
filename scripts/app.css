@@ -440,6 +440,34 @@ a.button-add{
     display: inline-block;
     font-size: 16px;
 }
+a.button-add2{
+    text-align: center;
+    margin-top: 1%;
+    margin-left: 47.6%;
+    background-color: lightblue; 
+    display: inline-block
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+a.button-add3{
+    text-align: center;
+    margin-top: 1%;
+   float:right;
+   margin-right: 1.5%;
+    background-color: lightblue; 
+    display: inline-block
+    color: black;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 
 /* style for add page */
 
@@ -490,3 +518,4 @@ input[type=text], select {
     display: inline-block;
     font-size: 16px;
 }
+
