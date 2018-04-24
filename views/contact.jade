@@ -4,10 +4,10 @@ block content
         img.contact-banner(alt='Oakfield Health', src='contactbanner.jpg')
         .contact-left
           h2 Message Us
-          form
-            input#name(type='text', name='name', placeholder='Your name..')
+          form(name='form', action='/submitted', onsubmit='return validateEmail()', ;='')
+            input#name(type='text', name='name', placeholder='Your name..' required)
             input#email(type='text', name='email', placeholder='Your email address..')
-            select.option(name='option')
+            select.option(name='option' required)
               option(value='', disabled='', selected='', hidden='') Select your option
               option(value='general-inquiry') General Inquiry
               option(value='appointment') Appointment

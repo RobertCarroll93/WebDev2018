@@ -6,8 +6,10 @@ app.use(express.static("scripts")); // Allow access to scripts folder
 app.use(express.static("images")); // Allow access to images folder
 
 var http = require('http');
+var $ = require('jquery');
 var bodyParser = require("body-parser");
 var fs = require('fs');
+
 
 app.set("view engine", "jade");
 
@@ -36,6 +38,11 @@ app.get('/staff', function(req, res){
 app.get('/academic', function(req, res){
   res.render("academic"); 
   console.log("Academic Section page is now rendered"); 
+});
+
+app.get('/submitted', function(req, res){
+  res.render("submitted"); 
+  console.log("Submitted page is now rendered"); 
 });
 
 app.get('/contact', function(req, res){

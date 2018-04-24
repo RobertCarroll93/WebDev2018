@@ -271,6 +271,7 @@ following code (eight block) is based on code from the above source */
 /* Some left and right padding inside the container */
 .container {
     padding: 0 16px;
+    
 }
 
 /* Clear floats */
@@ -388,6 +389,7 @@ template taken from above source and altered for this app (next six blocks) */
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
+    text-align: left;
     margin: 15% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
@@ -517,5 +519,25 @@ input[type=text], select {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+a.buttonback{
+    float:left;
+    margin-left: 2%;
+    margin-top: 1%;
+    background-color: lightblue; 
+    display: inline-block;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+.bannerslides{
+    width: 100%;
+    height:300px;
 }
 

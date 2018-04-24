@@ -1,258 +1,303 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <script>
-      // When the div is clicked on a popup will appear
-      function moreInfo() {
-      var popup = document.getElementById("myPopup");
-      popup.classList.toggle("show");
-      }
-    </script>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="stylesheetca3.css" type="text/css">
-    <title>Oakfield Health</title>
-  </head>
-  <body>
-    <div class="header">
-      <div class="nav">
-        <div class="topnav">
-          <div class="logo-div"><img alt="Oakfield Health" src="logo.png" class="logo"></div>
-          <div onclick="moreInfo()" class="contact-info">Phone: 046905467388 &nbsp&nbsp&nbsp Email: oakfield@health.ie<span id="myPopup" class="popuptext">Click on Contact Us for more info</span></div><a href="/index">Home</a><a href="/staff">Staff</a><a href="/academic">Academic Section</a><a href="/contact" class="contact-anchor">Contact Us</a>
-        </div>
-        <!--
-        https://www.w3schools.com/howto/howto_css_team.asp
-        Basic html of the "meet our team" used code from the above link
-        -->
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <div class="container">
-                <h2>HTML</h2>
-                <p>
-                  <button id="btn1">More Information</button>
-                  <div id="myModal" class="modal">
-                    <!-- content of model-->
-                    <div class="modal-content"><span class="close">×</span>
-                      <h1>HTML</h1><p>Hypertext Markup Language is a web standard for creating web pages and applications. Web browsers take HTML and render it into multimedia web pages. HTML creates the structure of a web page and can also be used to style (although this is now more commonly done using Cascading Style Sheets, which will be later elaborated upon).</p>
-<p>The pros of using HTML are;</p>
-<ul>
-	<li>Easy to learn</li>
-	<li>It is free</li>
-	<li>Is easily interpreted by all browsers</li>
-	<li>Widely used</li>
-	<li>Is very forgiving e.g. A misspelled or misplaced tag often does not affect the structure of the web page</li>
-	<li>Has an ever-improving set of features that respond it changing times, such new multimedia/graphic elements</li>
-</ul>
-Cons include;
-<ul>
-	<li>Can take a long time for new standards to be fully implemented by authors and browsers alike</li>
-	<li>Can be almost to forgiving in a sense with web pages being poorly written. This can lead to HTML becoming difficult for others to read and for search engines to efficiently catalogue the contents of a web page</li>
-	<li>Tags are in American English only which may inconvenience non-native speakers</li>
-</ul>
-<p>There is no widely used alternative to HTML. Jade (Pug) which is used in this project, may be mistakenly seen as an alternative but it only HTML that is ultimately interpreted by the browser. There are other markup languages that could be used for structuring a page such as XML, but these are usually used for a different purpose alongside HTML. XHTML is another form of HTML that is more syntactically strict and is laid out more like XML rather than traditional HTML. HTML5 is the most current version of HTML, which is planned to be constantly updated rather than a set standard as it has been the case with since the previous standards of HTML.
-</p>HTML is used throughout this project. It makes up the structure of all the web pages. There were relatively few problems encountered while writing the HTML. Although the HTML was formatted in a way that makes the application mobile friendly, there are a few divs that move in a non-uniform way when the screen is minimized and resized.
-<br><br>
-                    </div>
-                  </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="column2">
-            <div class="card">
-              <div class="container">
-                <h2>CSS</h2>
-                <p>
-                  <button id="btn2">More Information</button>
-                  <div id="myModal2" class="modal">
-                    <!-- content of model-->
-                    <div class="modal-content"><span class="close">×</span>
-                      <h1>CSS</h1>
-					  <p>Cascading Style Sheets are used to describe the how a web page is to be presented in a document containing a markup language. CSS is used on each webpage of this application. </p>
-						<p>The pros of using CSS are;</p>
-						<ul>
-							<li>Easy to learn</li>
-							<li>Speed at which a page can be styled over multiple web pages</li>
-							<li>Compatible on any browser of note</li>
-						</ul>
-						<p>The cons are;</p>
-						<ul>
-						<li>Syntax is different from HTML (for example, the syntax for commenting are different meaning both must be remembered)</li>
-						<li>Can cause complications when using web development tools such as Dreamweaver</li>
-						<li>Lack of security</li>
-						<li>Doesn’t always behave identically in every browser</li>
-						</ul>
-						<p>As is the case with HTML, there are no credible alternatives that occupy this space. Adobe Flash, Silverlight and other such applications can be used to a certain extent be used for styling web pages but cannot accurately be described as an alternative to CSS.</p>
-					</div>
-                  </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="column3">
-            <div class="card">
-              <div class="container">
-                <h2>JavaScript</h2>
-                <p>
-                  <button id="btn3">More Information</button>
-                  <div id="myModal3" class="modal">
-                    <!-- content of model-->
-                    <div class="modal-content"><span class="close">×</span>
-                      <p>Dr. Morak Limerar MB BCH MRCP <br><br><b>Email:</b> moraklimerar@health.ie<br><br>Has worked as a GP for for Oakfield Health for 15 years.<br><br><b>
-                          <u>Special Interests:</u></b><br>Holistic Patient Care<br>Family Health Needs<br>Occupational Health</p>
-                    </div>
-                  </div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row2">
-          <div class="column">
-            <div class="card">
-              <div class="container">
-                <h2>Dr. Emily O'Rourke</h2>
-                <p class="title">General Practioner</p>
-                <p>
-                  <button id="btn4">More Information</button>
-                  <div id="myModal4" class="modal">
-                    <!-- content of model-->
-                    <div class="modal-content"><span class="close">×</span>
-                      <p>Dr Emily O'Rourke MB BCH BAO MICGP DOWH<br><b>Email:</b> emilyorourke@health.ie<br><br>Qualified from University College Dublin (UCD).<br><br><b>
-                          <u>Special Interests:</u></b><br>Development of General Practice Services<br>Women's Health<br>Family Planning<br>Occupational Health</p>
-                    </div>
-                  </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="column2">
-            <div class="card">
-              <div class="container">
-                <h2>Michelle Campbell</h2>
-                <p class="title">Nurse</p>
-                <p>
-                  <button id="btn5">More Information</button>
-                  <div id="myModal5" class="modal">
-                    <!-- content of model-->
-                    <div class="modal-content"><span class="close">×</span>
-                      <p>Nurse Michelle Campbell RGN, Bsc (Hons) Nursing, H Dip (Practice Nursing)<br><br><b>Email:</b> michellecampbell@health.ie<br><br><b>
-                          <u>Special Interests:</u></b><br>Diabetes<br>Asthma<br>Women's Health<br>Cardiovascular Health<br>Weight Management</p>
-                    </div>
-                  </div>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="column3">
-            <div class="card">
-              <div class="container">
-                <h2>Susan Martin</h2>
-                <p class="title">Practice Secretary</p>
-                <p>
-                  <button id="btn6">More Information</button>
-                  <div id="myModal6" class="modal">
-                    <!-- content of model-->
-                    <div class="modal-content"><span class="close">×</span>
-                      <p><b>Email:</b> susanmartin@health.ie<br><br>	Has worked at Oakfield Health for twenty years</p>
-                    </div>
-                  </div>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="slider-button">See more</button>
-      </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script>
-        $(document).ready(function(){
-        $(".slider-button").click(function(){
-        $(".row2").slideToggle(500);
-        //Button changes between "See More" and "See Less" when the slide toggle button is clicked
-        //https://stackoverflow.com/questions/19365386/jquery-change-button-text-on-click
-        var $this = $(this);
-        $this.toggleClass('.row2');
-        if($this.hasClass('.row2')){
-        $this.text('See Less');
-        } else {
-        $this.text('See More');
-        }
-        });
-        });
-      </script>
-      <script>
-        //https://www.w3schools.com/howto/howto_css_modals.asp
-        // Get the modal
-        var modal = document.getElementById('myModal');
-        var modal2 = document.getElementById('myModal2');
-        var modal3 = document.getElementById('myModal3');
-        var modal4 = document.getElementById('myModal4');
-        var modal5 = document.getElementById('myModal5');
-        var modal6 = document.getElementById('myModal6');
-        // Get the button that opens the modal
-        var btn = document.getElementById("btn1");
-        var btn2 = document.getElementById("btn2");
-        var btn3 = document.getElementById("btn3");
-        var btn4 = document.getElementById("btn4");
-        var btn5 = document.getElementById("btn5");
-        var btn6 = document.getElementById("btn6");
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        var span2 = document.getElementsByClassName("close")[1];
-        var span3 = document.getElementsByClassName("close")[2];
-        var span4 = document.getElementsByClassName("close")[3];
-        var span5 = document.getElementsByClassName("close")[4];
-        var span6 = document.getElementsByClassName("close")[5];
-        // When the user clicks on the button, open the modal
-        btn.onclick = function() {
-        modal.style.display = "block";
-        }
-        btn2.onclick = function() {
-        modal2.style.display = "block";
-        }
-        btn3.onclick = function() {
-        modal3.style.display = "block";
-        }
-        btn4.onclick = function() {
-        modal4.style.display = "block";
-        }
-        btn5.onclick = function() {
-        modal5.style.display = "block";
-        }
-        btn6.onclick = function() {
-        modal6.style.display = "block";
-        }
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-        modal.style.display = "none";
-        }
-        span2.onclick = function() {
-        modal2.style.display = "none";
-        }
-        span3.onclick = function() {
-        modal3.style.display = "none";
-        }
-        span4.onclick = function() {
-        modal4.style.display = "none";
-        }
-        span5.onclick = function() {
-        modal5.style.display = "none";
-        }
-        span6.onclick = function() {
-        modal6.style.display = "none";
-        }
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-        if (event.target == modal) {
-        modal.style.display = "none";
-        }
-        }
-      </script>
-      <div class="footer">
-        <p>Robert Carroll 2018 &copy</p>
-      </div>
-    </div>
-  </body>
-</html>
+extends layout
+
+block content
+        //
+          https://www.w3schools.com/howto/howto_css_team.asp
+          Basic html of the academic secion basesd on code from the above link
+          .w3-content.w3-section(style='max-width:500px')
+     
+        .w3-content.w3-section(style='max-width:500px')
+        img.bannerslides(src='banner2.jpg')
+        img.bannerslides(src='banner3.jpg')
+
+        .row
+          .column
+            .card
+              .container
+                h2 HTML
+                p
+                  button#btn1 More Information
+                  #myModal.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      h1 HTML
+                      hr
+                      p
+                        | Hypertext Markup Language is a web standard for creating web pages and applications. Web browsers take HTML and render it into multimedia web pages. HTML creates the structure of a web page and can also be used to style (although this is now more commonly done using Cascading Style Sheets, which will be later elaborated upon).
+                      p The pros of using HTML are;
+                      ul
+                        li Easy to learn
+                        li It is free
+                        li Is easily interpreted by all browsers
+                        li Widely used
+                        li
+                          | Is very forgiving e.g. A misspelled or misplaced tag often does not affect the structure of the web page
+                        li
+                          | Has an ever-improving set of features that respond it changing times, such new multimedia/graphic elements
+                      | Cons include;
+                      ul
+                        li
+                          | Can take a long time for new standards to be fully implemented by authors and browsers alike
+                        li
+                          | Can be almost to forgiving in a sense with web pages being poorly written. This can lead to HTML becoming difficult for others to read and for search engines to efficiently catalogue the contents of a web page
+                        li Tags are in American English only which may inconvenience non-native speakers
+                      p
+                        | There is no widely used alternative to HTML. Jade (Pug) which is used in this project, may be mistakenly seen as an alternative but it only HTML that is ultimately interpreted by the browser. There are other markup languages that could be used for structuring a page such as XML, but these are usually used for a different purpose alongside HTML. XHTML is another form of HTML that is more syntactically strict and is laid out more like XML rather than traditional HTML. HTML5 is the most current version of HTML, which is planned to be constantly updated rather than a set standard as it has been the case with since the previous standards of HTML.
+                      | HTML is used throughout this project. It makes up the structure of all the web pages. There were relatively few problems encountered while writing the HTML. Although the HTML was formatted in a way that makes the application mobile friendly, there are a few divs that move in a non-uniform way when the screen is minimized and resized.
+                      br
+                      br
+          .column2
+            .card
+              .container
+                h2 CSS
+                p
+                  button#btn2 More Information
+                  #myModal2.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      h1 CSS
+                      p
+                        | Cascading Style Sheets are used to describe the how a web page is to be presented in a document containing a markup language. CSS is used on each webpage of this application.
+                      p The pros of using CSS are;
+                      ul
+                        li Easy to learn
+                        li Speed at which a page can be styled over multiple web pages
+                        li Compatible on any browser of note
+                      p The cons are;
+                      ul
+                        li
+                          | Syntax is different from HTML (for example, the syntax for commenting are different meaning both must be remembered)
+                        li Can cause complications when using web development tools such as Dreamweaver
+                        li Lack of security
+                        li Doesn’t always behave identically in every browser
+                      p
+                        | As is the case with HTML, there are no credible alternatives that occupy this space. Adobe Flash, Silverlight and other such applications can be used to a certain extent be used for styling web pages but cannot accurately be described as an alternative to CSS.
+          .column3
+            .card
+              .container
+                h2 JavaScript
+                p
+                  button#btn3 More Information
+                  #myModal3.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        | Dr. Morak Limerar MB BCH MRCP 
+                        br
+                        br
+                        b Email:
+                        |  moraklimerar@health.ie
+                        br
+                        br
+                        | Has worked as a GP for for Oakfield Health for 15 years.
+                        br
+                        br
+                        b
+                          u Special Interests:
+                        br
+                        | Holistic Patient Care
+                        br
+                        | Family Health Needs
+                        br
+                        | Occupational Health
+        .row2
+          .column
+            .card
+              .container
+                h2 Dr. Emily O'Rourke
+                p.title General Practioner
+                p
+                  button#btn4 More Information
+                  #myModal4.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        | Dr Emily O'Rourke MB BCH BAO MICGP DOWH
+                        br
+                        b Email:
+                        |  emilyorourke@health.ie
+                        br
+                        br
+                        | Qualified from University College Dublin (UCD).
+                        br
+                        br
+                        b
+                          u Special Interests:
+                        br
+                        | Development of General Practice Services
+                        br
+                        | Women's Health
+                        br
+                        | Family Planning
+                        br
+                        | Occupational Health
+          .column2
+            .card
+              .container
+                h2 Michelle Campbell
+                p.title Nurse
+                p
+                  button#btn5 More Information
+                  #myModal5.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        | Nurse Michelle Campbell RGN, Bsc (Hons) Nursing, H Dip (Practice Nursing)
+                        br
+                        br
+                        b Email:
+                        |  michellecampbell@health.ie
+                        br
+                        br
+                        b
+                          u Special Interests:
+                        br
+                        | Diabetes
+                        br
+                        | Asthma
+                        br
+                        | Women's Health
+                        br
+                        | Cardiovascular Health
+                        br
+                        | Weight Management
+          .column3
+            .card
+              .container
+                h2 Susan Martin
+                p.title Practice Secretary
+                p
+                  button#btn6 More Information
+                  #myModal6.modal
+                    // content of model
+                    .modal-content
+                      span.close ×
+                      p
+                        b Email:
+                        |  susanmartin@health.ie
+                        br
+                        br
+                        | 	Has worked at Oakfield Health for twenty years
+        button.slider-button See more
+          script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+         script.
+         $(document).ready(function(){
+         $(".slider-button").click(function(){
+         $(".row2").slideToggle(500);
+        
+         //Button changes between "See More" and "See Less" when the slide toggle button is clicked
+         //https://stackoverflow.com/questions/19365386/jquery-change-button-text-on-click
+       
+          var $this = $(this);
+          $this.toggleClass('.row2');
+          if($this.hasClass('.row2')){
+          $this.text('See Less');
+          } 
+          else {
+          $this.text('See More');
+          }
+          });
+          });
+        script.
+        
+          //https://www.w3schools.com/howto/howto_css_modals.asp
+          // Get the modal
+          
+          var modal = document.getElementById('myModal');
+          var modal2 = document.getElementById('myModal2');
+          var modal3 = document.getElementById('myModal3');
+          var modal4 = document.getElementById('myModal4');
+          var modal5 = document.getElementById('myModal5');
+          var modal6 = document.getElementById('myModal6');
+          
+          // Get the button that opens the modal
+          
+          var btn = document.getElementById("btn1");
+          var btn2 = document.getElementById("btn2");
+          var btn3 = document.getElementById("btn3");
+          var btn4 = document.getElementById("btn4");
+          var btn5 = document.getElementById("btn5");
+          var btn6 = document.getElementById("btn6");
+          
+          // Get the <span> element that closes the modal
+          
+          var span = document.getElementsByClassName("close")[0];
+          var span2 = document.getElementsByClassName("close")[1];
+          var span3 = document.getElementsByClassName("close")[2];
+          var span4 = document.getElementsByClassName("close")[3];
+          var span5 = document.getElementsByClassName("close")[4];
+          var span6 = document.getElementsByClassName("close")[5];
+          
+          // When the user clicks on the button, open the modal
+          
+          btn1.onclick = function() {
+          modal.style.display = "block";
+          }
+          btn2.onclick = function() {
+          modal2.style.display = "block";
+          }
+          btn3.onclick = function() {
+          modal3.style.display = "block";
+          }
+          btn4.onclick = function() {
+          modal4.style.display = "block";
+          }
+          btn5.onclick = function() {
+          modal5.style.display = "block";
+          }
+          btn6.onclick = function() {
+          modal6.style.display = "block";
+          }
+          
+          // When the user clicks on <span> (x), close the modal
+          
+          span.onclick = function() {
+          modal.style.display = "none";
+          }
+          span2.onclick = function() {
+          modal2.style.display = "none";
+          }
+          span3.onclick = function() {
+          modal3.style.display = "none";
+          }
+          span4.onclick = function() {
+          modal4.style.display = "none";
+          }
+          span5.onclick = function() {
+          modal5.style.display = "none";
+          }
+          span6.onclick = function() {
+          modal6.style.display = "none";
+          }
+          
+          // When the user clicks anywhere outside of the modal, close it
+          
+          window.onclick = function(event) {
+          if (event.target == modal) {
+          modal.style.display = "none";
+          }
+          }
+          
+          //Following makes a slide show on academic page
+          //Based on https://www.w3schools.com/w3css/w3css_slideshow.asp
+          
+        script.
+          var x = 0;
+          autoSlideShow();
+          function autoSlideShow() {
+          var i;
+          var y = document.getElementsByClassName("bannerslides");
+          for (i = 0; i < y.length; i++) {
+             y[i].style.display = "none";  
+          }
+          x++;
+          if (x > y.length) {x = 1}    
+          y[x-1].style.display = "block";  
+          setTimeout(autoSlideShow, 2000); // Change image every 2 seconds
+          }
+            
