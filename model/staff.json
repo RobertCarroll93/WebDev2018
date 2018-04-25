@@ -8,46 +8,6 @@
         "image": "person1.jpg"
     },
     {
-        "name": "Laura McGrath",
-        "id": 2,
-        "speciality": "Infectious diseases",
-        "university": "University College London",
-        "yearspractised": 10,
-        "image": "person3.jpg"
-    },
-    {
-        "name": "Gavrilo Paadfsdrincip GP",
-        "id": 3,
-        "speciality": "Infectious diseases",
-        "university": "University College London",
-        "yearspractised": 10,
-        "image": "person3.jpg"
-    },
-    {
-        "name": "Gavrilo Pringergrcip GP",
-        "id": 4,
-        "speciality": "Infectious diseases",
-        "university": "University College London",
-        "yearspractised": 10,
-        "image": "person3.jpg"
-    },
-    {
-        "name": "Gavrilo Princip GP",
-        "id": 5,
-        "speciality": "Infectious diseases",
-        "university": "University College London",
-        "yearspractised": 10,
-        "image": "person3.jpg"
-    },
-    {
-        "name": "Gavrilo Paadfsdrincip GP",
-        "id": 6,
-        "speciality": "Infectious diseases",
-        "university": "University College London",
-        "yearspractised": 10,
-        "image": "person3.jpg"
-    },
-    {
         "name": "Philip Walsh",
         "id": 7,
         "speciality": "Paediatrics",

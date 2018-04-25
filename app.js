@@ -171,8 +171,29 @@ app.post("/edit/:name", function(req, res){
   res.redirect("/staff");
 });
 
+//Delete functionality
 
-
+app.get('/delete/:name', function(req, res) {
+  var json = JSON.stringify(staff);
+  fs.readFile('./model/staff.json', 'utf8', function readFileCallback(err, data){
+    if (err){
+        console.log(err);
+    } else {
+var key = req.params.name;
+//cahnges the json to a variable
+var string = staff; 
+var data = string; //this declares data = string
+var index = data.map(function(data) { return data['name']; }).indexOf(key) // Finds postition of data to be deleted http://jsfiddle.net/hxfdZ/
+//The 1 means only one item will be deleted
+staff.splice(index , 1); 
+//Converts back into JSON
+json = JSON.stringify(staff, null, 4);
+// Writes back to file
+fs.writeFile('./model/staff.json', json, 'utf8'); 
+console.log("Staffmember has been deleted");
+}});
+res.redirect("/staff");
+});
 
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   console.log("It's running!");
