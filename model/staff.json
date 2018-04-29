@@ -14,5 +14,12 @@
         "university": "NUI Galway",
         "yearspractised": "10",
         "image": "person3.jpg"
+    },
+    {
+        "name": "Grace Wall",
+        "speciality": "Geriatrics",
+        "university": "Queens University Belfast",
+        "yearspractised": "7",
+        "image": "person2.jpg"
     }
 ]

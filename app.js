@@ -195,6 +195,7 @@ console.log("Staffmember has been deleted");
 res.redirect("/staff");
 });
 
+
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   console.log("It's running!");
 });
