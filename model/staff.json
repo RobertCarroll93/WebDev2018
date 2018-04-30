@@ -9,7 +9,7 @@
     },
     {
         "name": "Philip Walsh",
-        "id": 7,
+        "id": 2,
         "speciality": "Paediatrics",
         "university": "NUI Galway",
         "yearspractised": "10",
@@ -17,6 +17,7 @@
     },
     {
         "name": "Grace Wall",
+        "id": 3,
         "speciality": "Geriatrics",
         "university": "Queens University Belfast",
         "yearspractised": "7",
@@ -24,10 +25,17 @@
     },
     {
         "name": "James Owens",
-        "id": 8,
+        "id": 4,
         "speciality": "Endocrinology",
         "university": "NUI Maynooth",
         "yearspractised": "22",
         "image": "person5.jpg"
+    },
+    {
+        "name": "Michelle Paul",
+        "speciality": "Injury",
+        "university": "Trinity College Dublin",
+        "yearspractised": "20",
+        "image": "person6.jpg"
     }
 ]
