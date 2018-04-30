@@ -42,11 +42,6 @@ block content
                         li
                           | Can be almost to forgiving in a sense with web pages being poorly written. This can lead to HTML becoming difficult for others to read and for search engines to efficiently catalogue the contents of a web page
                         li Tags are in American English only which may inconvenience non-native speakers
-                      p
-                        | There is no widely used alternative to HTML. Jade (Pug) which is used in this project, may be mistakenly seen as an alternative but it only HTML that is ultimately interpreted by the browser. There are other markup languages that could be used for structuring a page such as XML, but these are usually used for a different purpose alongside HTML. XHTML is another form of HTML that is more syntactically strict and is laid out more like XML rather than traditional HTML. HTML5 is the most current version of HTML, which is planned to be constantly updated rather than a set standard as it has been the case with since the previous standards of HTML.
-                      | HTML is used throughout this project. It makes up the structure of all the web pages. There were relatively few problems encountered while writing the HTML. Although the HTML was formatted in a way that makes the application mobile friendly, there are a few divs that move in a non-uniform way when the screen is minimized and resized.
-                      br
-                      br
           .column2
             .card
               .container
@@ -72,8 +67,6 @@ block content
                         li Can cause complications when using web development tools such as Dreamweaver
                         li Lack of security
                         li Doesn’t always behave identically in every browser
-                      p
-                        | As is the case with HTML, there are no credible alternatives that occupy this space. Adobe Flash, Silverlight and other such applications can be used to a certain extent be used for styling web pages but cannot accurately be described as an alternative to CSS.
           .column3
             .card
               .container
@@ -84,105 +77,91 @@ block content
                     // content of model
                     .modal-content
                       span.close ×
+                      h1 JavaScript
                       p
-                        | Dr. Morak Limerar MB BCH MRCP 
-                        br
-                        br
-                        b Email:
-                        |  moraklimerar@health.ie
-                        br
-                        br
-                        | Has worked as a GP for for Oakfield Health for 15 years.
-                        br
-                        br
-                        b
-                          u Special Interests:
-                        br
-                        | Holistic Patient Care
-                        br
-                        | Family Health Needs
-                        br
-                        | Occupational Health
+                        | JS is a high-level programming language, that along with HTML and CSS form the three main technologies that make up the World Wide Web. It is supported by all modern web browsers and is used to create dynamic websites, meaning the page does not need to be refreshed to change an element or content on the page. JavaScript was originally a client-side programming language, but this has changed in recent years. It can now be used as a server-side language which is evident in the use of Node.js in this project. This has made JS a multi-purpose programming language that has bridged the gap between client and server-side programming, which has led to a large uptake in the use of JS in recent times. 
+                      p The pros of using JS are;
+                      ul
+                        li JS is relatively easy to learn in comparison to other prominent programming languages such as Java and C++.
+                        li When used as a client-side language, JS is very fast as it does not need to contact the server side for a response.
+                        li JS is very versatile and can be placed into most file extensions, while other languages such as PHP cannot.
+                      p The cons are;
+                      ul
+                        li
+                          | When JS is used on the client side it can be open to malicious attacks. 
+                        li JS can sometimes be interpreted differently by different browsers, although in the current time this is not as much of a problem as it has been in the past.
+                        li Although JS is fast becoming a big player in server-side programming, some argue that it is not as powerful as the longer established languages such as Java and C.
+                        li When used for server-side purposes, there are differences which can lead to difficulties. This may be due to the fact that JS is not regarded as an objected orientated language by many, although this is open to interpretation (Stack Overflow, 2012).
+                      p
+                        | As is the case with HTML, there are noth
         .row2
           .column
             .card
               .container
-                h2 Dr. Emily O'Rourke
-                p.title General Practioner
+                h2 Jade
                 p
                   button#btn4 More Information
                   #myModal4.modal
                     // content of model
                     .modal-content
                       span.close ×
+                      h1 Jade
                       p
-                        | Dr Emily O'Rourke MB BCH BAO MICGP DOWH
-                        br
-                        b Email:
-                        |  emilyorourke@health.ie
-                        br
-                        br
-                        | Qualified from University College Dublin (UCD).
-                        br
-                        br
-                        b
-                          u Special Interests:
-                        br
-                        | Development of General Practice Services
-                        br
-                        | Women's Health
-                        br
-                        | Family Planning
-                        br
-                        | Occupational Health
+                        |  Jade is a templating engine used in Node.js. It allows for cleaner, more readable code that can easily be altered or maintain. Jade compiles into basic HTML. It also allows for separation between HTML and dynamic content (Banas, 2016). Jade is now depreciated and has been renamed Pug, although for this project Jade was used.
+                      p The pros of using Jade are;
+                      ul
+                        li Much more readable as there is less clutter e.g. brackets are not used
+                        li As correct indentation is necessary it forces the author to make Jade clean and easy to read and alter
+                        li Syntax is shorter and simpler which can speed up the writing of Jade over HTML  
+                      p The cons are;
+                      ul
+                        li
+                          | Often it can be difficult to see where Jade has not been indented correctly, which can take up time and be frustrating
+                        li •	Jade can sometimes be difficult to read
           .column2
             .card
               .container
-                h2 Michelle Campbell
-                p.title Nurse
+                h2 jQuery
                 p
                   button#btn5 More Information
                   #myModal5.modal
                     // content of model
                     .modal-content
                       span.close ×
+                       h1 jQuery
                       p
-                        | Nurse Michelle Campbell RGN, Bsc (Hons) Nursing, H Dip (Practice Nursing)
-                        br
-                        br
-                        b Email:
-                        |  michellecampbell@health.ie
-                        br
-                        br
-                        b
-                          u Special Interests:
-                        br
-                        | Diabetes
-                        br
-                        | Asthma
-                        br
-                        | Women's Health
-                        br
-                        | Cardiovascular Health
-                        br
-                        | Weight Management
+                        | jQuery is a client-side JavaScript library that is used as a simplified alternative to traditional JS. It makes the traversal, manipulation, event handling, animation, and Ajax of a HTML document easier (jQuery.org, 2018).  It works in most modern browsers.
+                      p The pros of using jQuery are;
+                      ul
+                        li Simple syntax
+                        li More can be achieved in less lines of code compared to JS
+                        li Large library in comparison to other JS libraries
+                      p The cons are;
+                      ul
+                        li
+                          | Some bandwidth is used to download functions from the library which wouldn’t be required with traditional JS
           .column3
             .card
               .container
-                h2 Susan Martin
-                p.title Practice Secretary
+                h2 JSON
                 p
                   button#btn6 More Information
                   #myModal6.modal
                     // content of model
                     .modal-content
                       span.close ×
+                      h1 JSON
                       p
-                        b Email:
-                        |  susanmartin@health.ie
-                        br
-                        br
-                        | 	Has worked at Oakfield Health for twenty years
+                        | JSON stands for JavaScript Object Notation and is an open-standard file format used for is a lightweight data-interchange (json.org, 2018). It is relatively easy to read and write and the tags are self-describing. JSON is effective at persisting and exchanging data.
+                      p The pros of using JSON are;
+                      ul
+                        li Supported by all browsers
+                        li Works well with JS
+                        li Easy to read
+                      p The cons are;
+                      ul
+                        li
+                          | Not as widespread as XML
         button.slider-button See more
           script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
          script.

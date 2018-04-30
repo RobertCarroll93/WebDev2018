@@ -21,5 +21,13 @@
         "university": "Queens University Belfast",
         "yearspractised": "7",
         "image": "person2.jpg"
+    },
+    {
+        "name": "James Owens",
+        "id": 8,
+        "speciality": "Endocrinology",
+        "university": "NUI Maynooth",
+        "yearspractised": "22",
+        "image": "person5.jpg"
     }
 ]
